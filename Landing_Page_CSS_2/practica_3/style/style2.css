@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 800px;
+    margin: auto;
+    background-color: #33333397;
+    
+}
+.header_title {
+    text-align: center;
+    color: aliceblue;
+}
+section{
+    background-color: #f8f8f8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding-bottom: 10px;
+    
+}
+
+h2{
+    text-align: center;
+    color: #F0544F;
+    padding: 20px;
+}
+h3{
+    text-align: center;
+    color: #eca562;
+    padding: 10px;
+}
+.paragraph{
+    text-align: justify;
+    padding: 0 30px;
+    padding-bottom: 10px;
+    
+    
+}
+div{
+    text-align: center;
+    padding: 30px;
+    
+    margin-left:60px;
+    margin-right: 60px;
+    border-radius: 10px;
+    background-color: #fcf9ef;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    
+    
+    
+}
+
+header{
+    background-color: #333;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.footer_nav{
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    
+}
+
+.footer_nav ul{
+    
+    list-style: none;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    
+    
+    
+}
+.footer_nav li{
+    display: inline-block;
+   
+    
+}
+.footer_nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.footer_paragraph{
+    background-color: #333;
+    padding-bottom: 10px ;
+    text-align: center;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
