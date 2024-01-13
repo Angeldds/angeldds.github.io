@@ -9,7 +9,7 @@ body {
 
     /* overflow: hidden;  */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background: url('/imgs/img1.jpg') center center fixed;  */
+    background: url('/imgs/img1.jpg') center center fixed; 
      background-size: cover;
     text-align: center;
     
@@ -17,7 +17,7 @@ body {
     background: linear-gradient(90deg, rgba(120, 179, 183, 1) 0%, rgba(3, 22, 28, 1) 35%, rgba(108, 171, 178, 1) 100%); */
 
 }
-video {
+/* video {
     
     position: fixed;
     top: 0;
@@ -25,9 +25,10 @@ video {
     width: 100%;
     height: 100%;
     object-fit: cover;  /* Ajusta la relación de aspecto del video */
-    /* filter: blur(3px);  */
+    /* filter: blur(3px);  
+}*/
      
-  }
+ 
 
 header {
     background-color: #01010156;
@@ -114,7 +115,7 @@ header h1 {
     background: linear-gradient(160deg, rgba(51,120,127,0.700717787114846) 0%, rgba(15,26,30,1) 80%); */
     color: #ffffff;
     background: rgb(51,120,127);
-    background: linear-gradient(160deg, rgba(125, 165, 185, 0.701) 0%, rgb(16, 76, 97) 80%);
+    background: linear-gradient(160deg, rgba(125, 178, 185, 0.701) 0%, rgb(16, 97, 89) 80%);
     /* background-color: #23434E; */
     transform: scale(1.1);
 }
