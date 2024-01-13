@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #152533;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.formulario{
+    width: 40%;
+    background-color: #5F6B75;
+    margin: auto;
+    margin: 10px auto;
+    padding: 10px;
+}
+.title{
+    text-align: center;
+}
+.sub_title{
+    padding-top: 10px;
+}
+.paragraph{
+    margin-top: 10px;
+}
+hr{
+    margin: 20px 0px;
+}
+.cajas{
+    width: 100%;
+    padding: 10px;
+}
+#select{
+    width: 100%;
+    padding: 10px;
+
+    appearance: none;
+    cursor: pointer;
+}
+option{
+    background-color: #152533;
+    color: #fff;
+    font-size: 1.2em;
+}
+option:hover{
+    background-color: aliceblue;
+}
+.botones{
+    display: block;
+    border: 0 none;
+    cursor: pointer;
+    width: 120px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+.botones:hover{
+    background-color: #152533;
+    color:#ffffff ;
+}
+input[type="checkbox"],input[type="radio"] {
+    /* width: 20px; 
+    height: 20px; */
+    margin-right: 5px;
+  }
+label{
+    display: block;
+    padding: 0px 10px;
+}
+
+/*Para celulares 480px*/
+
+@media screen and (max-width:480px){
+    .botones{
+        width: 100%;
+        background-color: #82B2DB;
+    }
+    option{
+        background-color:#152533;
+    }
+
+}

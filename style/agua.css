@@ -1,0 +1,22 @@
+/* Estilos adicionales para Ripples.js */
+
+  .login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+  
+  /* Estilos específicos para el formulario de inicio de sesión */
+  .login-form {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    max-width: 400px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+  }
+  

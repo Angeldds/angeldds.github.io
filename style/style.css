@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    /* overflow: hidden;  */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: url('/imgs/img1.jpg') center center fixed;  */
+     background-size: cover;
+    text-align: center;
+    
+    /* background: rgb(120, 179, 183);
+    background: linear-gradient(90deg, rgba(120, 179, 183, 1) 0%, rgba(3, 22, 28, 1) 35%, rgba(108, 171, 178, 1) 100%); */
+
+}
+video {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ajusta la relación de aspecto del video */
+    /* filter: blur(3px);  */
+     
+  }
+
+header {
+    background-color: #01010156;
+    max-width: 821px;
+    width: 90%;
+    margin: auto;
+    padding: 0px 10px;
+    backdrop-filter: blur(30px);
+    border: solid 1px #fff;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.7);
+    border-radius: 20px;
+    /* padding: 10px; */
+}
+
+header h1 {
+    color: #fff;
+    padding: 30px;
+}
+
+/*Botones*/
+.tarea-container {
+    max-width: 821px;
+    margin: 10px auto;
+    border: solid 1px #fff;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.7);
+    border-radius: 20px;
+    background-color: #0000001c; 
+    backdrop-filter: blur(30px); 
+    height: 100vh; 
+}
+
+.tarea__botones {
+    color: #f8f8f8;
+    display: inline-block;
+    max-width: 250px;
+    width: 100%;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(21, 32, 28, 0.91);
+    backdrop-filter: blur(4px);
+    border: solid 1px #ffffff9a;
+    padding: 10px;
+
+    background-color: #00000025;
+    backdrop-filter: blur(10px); 
+
+
+}
+
+.tarea__botones h1,
+.tarea__botones h2 {
+    margin: 0;
+}
+
+.tarea__botones h2 {
+    font-size: 1.2em;
+
+}
+
+.tarea__botones p {
+    font-weight: lighter;
+    font-size: 1.1em;
+
+}
+
+.tarea__botones:hover {
+    
+    /* background: rgb(51,120,127);
+    background: linear-gradient(160deg, rgba(51,120,127,0.700717787114846) 0%, rgba(15,26,30,1) 80%); */
+    color: #ffffff;
+    background: rgb(51,120,127);
+    background: linear-gradient(160deg, rgba(125, 165, 185, 0.701) 0%, rgb(16, 76, 97) 80%);
+    /* background-color: #23434E; */
+    transform: scale(1.1);
+}
+
+footer {
+    margin: auto;
+    max-width: 821px;
+    width: 90%;
+    color: #fff;
+    background-color: #01010156;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: solid 1px #fff;
+    padding: 20px;
+    /* height: 100vh; */
+}
+/*pantalla 768px*/
+@media screen and (max-width:768px) {
+    .tarea-container{
+        height: 100%; 
+    }
+}
