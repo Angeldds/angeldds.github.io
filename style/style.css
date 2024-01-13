@@ -11,24 +11,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url('/imgs/img1.jpg') center center fixed; 
      background-size: cover;
-    text-align: center;
+    text-align: center;  
     
     /* background: rgb(120, 179, 183);
     background: linear-gradient(90deg, rgba(120, 179, 183, 1) 0%, rgba(3, 22, 28, 1) 35%, rgba(108, 171, 178, 1) 100%); */
-
 }
-/* video {
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  /* Ajusta la relación de aspecto del video */
-    /* filter: blur(3px);  
-}*/
-     
- 
 
 header {
     background-color: #01010156;
