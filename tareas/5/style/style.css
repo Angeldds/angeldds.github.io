@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    background-color: #c0c8ce;
+}
+
+header {
+    background-color: #3d4451;
+}
+
+.logos {
+
+    padding: 20px;
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.sociales {
+    float: right;
+
+}
+
+.sociales img {
+
+    margin-left: 5px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.729);
+}
+
+/*Nav-----------------------------------------------*/
+.botones_base {
+    background-color: #8b96a2;
+}
+
+.botones {
+    margin: auto;
+    overflow: hidden;
+    max-width: 960px;
+    width: 100%;
+    /* background-color: #1a1a1a; */
+
+}
+
+.botones ul {
+    text-align: center;
+    font-size: 0;
+
+}
+
+.botones li {
+    display: inline-block;
+
+    text-align: center;
+
+}
+
+.botones a {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    padding: 20px 10px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #141624;
+
+    transition: 0.2s;
+}
+
+.botones a:hover {
+    background-color: #2b2f40;
+    color: aliceblue;
+    /* transform: scale(1.2); */
+}
+
+/*banner------------------------------------------*/
+
+.banner {
+    margin: auto;
+    overflow: hidden;
+    background-color: aqua;
+    max-width: 960px;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+
+}
+
+/* -------------------------------------------------- */
+
+/*conetenido*/
+.container {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    max-width: 960px;
+    background-color: #e2e7e9;
+    font-size: 0px;
+
+
+}
+
+section {
+    padding: 10px;
+    display: inline-block;
+    width: 273px;
+
+    background: linear-gradient(180deg, rgba(255, 240, 0, 0) 0%, #b6b6b6 100%);
+    margin: 5px;
+
+}
+
+.container h2 {
+    font-size: 28px;
+    text-align: left;
+    color: #2b2f40;
+
+}
+
+.paragraph {
+    font-size: 15px;
+    text-align: justify;
+    padding: 10px 0px;
+
+}
+
+.container img {
+    width: 100%;
+}
+
+.leer {
+    color: #ffffff;
+    font-size: 15px;
+    background-color: rgb(59, 67, 74);
+    padding: 10px 20px;
+    cursor: pointer;
+    float: left;
+    text-decoration: none;
+}
+
+/*Footer-----------------------------------------------------*/
+footer {
+    color: aliceblue;
+    background-color: #141624;
+    text-align: center;
+    padding: 10px;
+}
+
+footer h3 {
+    font-size: 2em;
+}
+
+footer h3,
+p {
+    padding: 5px;
+}
