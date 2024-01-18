@@ -9,7 +9,7 @@ body {
 
     /* overflow: hidden;  */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('/imgs/img1.jpg') center center fixed; 
+    background: url('/imgs/img2.jpg') center center fixed; 
      background-size: cover;
     text-align: center;  
     
@@ -101,8 +101,8 @@ header h1 {
     /* background: rgb(51,120,127);
     background: linear-gradient(160deg, rgba(51,120,127,0.700717787114846) 0%, rgba(15,26,30,1) 80%); */
     color: #ffffff;
-    background: rgb(51,120,127);
-    background: linear-gradient(160deg, rgba(125, 178, 185, 0.701) 0%, rgb(16, 97, 89) 80%);
+    
+    background: linear-gradient(160deg, rgba(172, 217, 152, 0.701) 0%, #0B1419 80%);
     /* background-color: #23434E; */
     transform: scale(1.1);
 }
