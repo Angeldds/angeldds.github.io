@@ -275,6 +275,9 @@ a {
     .botones li {
         padding:10px;
     }
+    .img-text .title {
+        padding-top: 160px;
+    }
     .renders{
         flex-wrap: wrap;
         justify-content: space-evenly;
