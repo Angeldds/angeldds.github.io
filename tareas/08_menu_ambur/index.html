@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
     <meta charset="UTF-8">
@@ -8,17 +8,23 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 
-</head> 
+</head>   
     <header class="header" id="inicio">
         <nav class="nav">
             <div class="margin sub-nav">
                 <a href="#inicio"><img src="img/logo_base.png" class="logo item" alt=""></a>
-                <ul class="botones item">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#acerca">Acera de</a></li>
-                    <li><a href="#servicio">Servicios</a></li>
-                    <li><a href="#trabajos">Trabajos</a></li>
+                
+                <label  for="menu" class="nav_label">
+                    <i class="fa-solid fa-bars-staggered menus "></i>
+                </label>
+                <input type="checkbox"  id="menu" class="nav__input">
+                <ul class="botones item nav__menu">
+                    <li class="sub-botones"><a href="#inicio">Inicio</a></li>
+                    <li class="sub-botones"><a href="#acerca">Acera de</a></li>
+                    <li class="sub-botones"><a href="#servicio">Servicios</a></li>
+                    <li class="sub-botones"><a href="#trabajos">Trabajos</a></li>
                 </ul>
+
             </div>
         </nav>
         <div class="img-text ">
@@ -30,7 +36,7 @@
     <main>
         <div class="acerca-de margin" id="acerca"><!--Acerca de -->
             <article class="acerca-article">
-                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-heart "></i>
                 <h2 class="acerca-title">Design</h2>
                 <p class="acerca-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ut nulla dicta, ab doloremque consequatur harum mollitia, ipsam minus magnam quaerat praesentium ratione, amet aperiam incidunt. Iste porro molestiae non.</p>
             </article>

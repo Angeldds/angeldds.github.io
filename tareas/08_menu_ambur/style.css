@@ -28,7 +28,7 @@ a {
 }
 .nav {
     width: 100%;
-    background-color: #262323;
+    background-color: #1f1f1ff9;
     position: fixed;
     z-index: 5;
 
@@ -44,8 +44,13 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+   
 }
-
+.sub-nav a{
+    display: block;
+    padding: 20px 0;
+}
 .item {
     flex-grow: 1;
     /*puedes crecer*/
@@ -58,9 +63,7 @@ a {
 .logo {
     max-width: 150px;
     width: 100%;
-
 }
-
 
 .botones {
     flex-direction: row;
@@ -69,7 +72,29 @@ a {
     justify-content: flex-end;
     flex-wrap: wrap;
     overflow: hidden;
+    
+    
+}
 
+/*pseduelemto menu sin js*/
+
+.sub-botones{
+    --clippy:polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+    
+}
+.sub-botones::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 100%;
+    margin-top: 1px;
+    height: 2px;
+    clip-path:var(--clippy);
+    transition: clip-path 0.5s;
+}
+.sub-botones:hover{
+    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: 0.5s;
 
 }
 
@@ -80,7 +105,23 @@ a {
 .botones a {
     font-size: 1.5em;
     font-weight: 500;
+    padding: 0;
 }
+.menus{
+    color: #fff;
+    font-size: 2em;
+     
+}
+
+/*menu-sin-js*/
+.nav__input:checked+.nav__menu{
+    
+}
+.nav_label,.nav__input{
+    display: none;
+}
+
+
 
 .img-text {
     width: 100%;
@@ -115,7 +156,7 @@ a {
     padding: 10px;
 }
 
-.fa-solid,
+article .fa-solid,
 .fa-regular {
     font-size: 3em;
     color: #8f1f11;
@@ -222,6 +263,30 @@ a {
     font-size: 3em;
 }
 @media screen and (max-width:740px){
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav__menu{
+        position: fixed;
+        top:87.13px;
+        
+        background-color: #1f1f1ff9;
+        min-width: 25%;
+        height: 200px;
+        left: 0;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle( 0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+
+    .nav__input:checked + .nav__menu{
+        
+        clip-path: circle(100% at center);
+    }
+
     .margin {
         width: 95%;
         margin: auto;
@@ -229,10 +294,7 @@ a {
     .sub-nav{
         gap: 1em;
     }
-    .botones{
-        justify-content: space-between;
-        gap: .5em;
-    }
+
     .botones a {
         font-size: 1.1em;
         font-weight: 500;
@@ -261,7 +323,7 @@ a {
     }
     .sub-nav{
         gap: 1em;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .botones{
@@ -291,7 +353,7 @@ a {
 @media screen and (max-width:380px){
     .sub-nav{
         gap: 1em;
-        flex-direction: column;
+        flex-direction:row;
         align-items: center;
     }
     .botones{
