@@ -338,7 +338,7 @@ article .fa-solid,
         padding:10px;
     }
     .img-text .title {
-        padding-top: 160px;
+        padding-top: 100px;
     }
     .renders{
         flex-wrap: wrap;
@@ -361,7 +361,7 @@ article .fa-solid,
         gap: .5em;
     }
     .img-text .title {
-        padding-top: 180px;
+        padding-top: 100px;
     }
     .img-text .tex {
         
