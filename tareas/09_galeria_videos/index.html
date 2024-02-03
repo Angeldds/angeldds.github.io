@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SB</title>
+</head>
+
+<body>
+    <div class="container-base">
+        <h1>Gleria de multimedia</h1>
+        <div class="container">
+            <!-- reproductor_grande --> 
+            <div class="pantalla-video item" >
+                <video controls autoplay muted class="content-video" id="playvideo">
+                    <source src="videos/01.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- listas de video -->
+            <div class="listas-video item">
+                <h2>title</h2>
+                <div class="listas">
+                    <div class="miniatura" onclick="video('videos/01.mp4')" >
+                        <div class="miniatura-video">
+                            <video muted class="video">
+                                <source src="videos/01.mp4">
+                            </video>
+                        </div>
+                        <div class="text-video">
+                            <h2>titulo</h2>
+                            <p>descripciones</p>
+                        </div>
+                    </div> 
+                    <div class="miniatura" onclick="video('videos/02.mp4')" >
+                        <div class="miniatura-video">
+                            <video muted class="video">
+                                <source src="videos/02.mp4">
+                            </video>
+                        </div>
+                        <div class="text-video">
+                            <h2>titulo</h2>
+                            <p>descripciones</p>
+                        </div>
+                    </div>
+                    <div class="miniatura" onclick="video('videos/03.mp4')">
+                        <div class="miniatura-video">
+                            <video muted class="video">
+                                <source src="videos/03.mp4">
+                            </video>
+                        </div>
+                        <div class="text-video">
+                            <h2>titulo</h2>
+                            <p>descripciones</p>
+                        </div>
+                    </div>
+                    <div class="miniatura" onclick="video('videos/04.mp4')">
+                        <div class="miniatura-video">
+                            <video muted class="video">
+                                <source src="videos/04.mp4">
+                            </video>
+                        </div>
+                        <div class="text-video">
+                            <h2>titulo</h2>
+                            <p>descripciones</p>
+                        </div>
+                    </div>
+                    <div class="miniatura" onclick="video('videos/05.mp4')">
+                        <div class="miniatura-video">
+                            <video muted class="video">
+                                <source src="videos/05.mp4">
+                            </video>
+                        </div>
+                        <div class="text-video">
+                            <h2>titulo</h2>
+                            <p>descripciones</p>
+                        </div>
+                    </div>
+                    <div class="miniatura" onclick="video('videos/06.mp4')">
+                        <div class="miniatura-video">
+                            <video muted class="video">
+                                <source src="videos/06.mp4">
+                            </video>
+                        </div>
+                        <div class="text-video">
+                            <h2>titulo</h2>
+                            <p>descripciones</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

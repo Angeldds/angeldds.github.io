@@ -9,7 +9,7 @@ body {
 
     /* overflow: hidden;  */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('/imgs/img2.jpg') center center fixed; 
+    background: url('../imgs/img2.jpg') center center fixed; 
      background-size: cover;
     text-align: center;  
     
