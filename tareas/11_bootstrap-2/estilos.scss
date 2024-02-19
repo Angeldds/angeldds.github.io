@@ -1,0 +1,18 @@
+// Definimos una variable para el color principal del botón
+$color-primario: #3498db;
+
+// Estilos del botón
+.btn {
+  background-color: $color-primario;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  // Estilos cuando el cursor pasa sobre el botón
+  &:hover {
+    background-color: darken($color-primario, 20%);
+  }
+}
+

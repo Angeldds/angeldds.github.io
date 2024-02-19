@@ -1,0 +1,8 @@
+.links {
+    color: #ffffff;
+    cursor: pointer;
+    // Estilos cuando el cursor pasa sobre el botón
+    &:hover {
+      color: #786a01;
+    }
+  }

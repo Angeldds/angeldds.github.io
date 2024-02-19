@@ -1,0 +1,110 @@
+
+.fondo-container{
+    background: url(img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondo-transparent{
+    background: #26397ea3;
+}
+
+/*uso de boostra*/
+.bg-c{
+    background-color: #f2f5f5;
+
+  }
+
+  .d-item{
+    height: 500px;
+    
+    
+  }
+  .d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.1);
+  }
+ .cardimg{
+  margin-bottom: 10px; 
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  animation: destello 1s infinite alternate; 
+ }
+ .fondo-personal{
+  background:#656abe;
+ }
+ .a-link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px 1px;
+  overflow: hidden;
+  background: #656abe;
+ }
+ .ico{
+  transform: translateY(12px);
+  font-size: 20px;
+  color: #f2f5f5;
+  transition: .2s ease-in; 
+ }
+ .a-link:hover .ico{
+  font-size: 30px;
+  color: #656abe;
+  border-radius: 3px;
+  transition: .5s ease-out;
+ }
+ .a-link:hover{
+  background: #eaeaec;
+  transition: .5s ease-out;
+ }
+  .a-link:hover {
+  animation: destello 1s infinite step-start; 
+ }
+ .fondo-footr{
+  background: #656abe62;
+ }
+.boton{
+  background: #7139ffa7;
+  color: #eaeaec;
+  border: solid 1px #eaeaec;
+}
+
+.navbar-toggler-ico{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(img/ico.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; 
+}
+.navbar-nav{
+  --bs-nav-link-hover-color:rgb(255, 218, 56);
+}
+ @keyframes destello {
+  from {
+    filter: drop-shadow(0 0 10px rgba(251, 77, 245, 0)); /* Estado inicial */
+  }
+  to {
+    filter: drop-shadow(0 0 10px rgba(255, 127, 52, 0.47)); /* Estado final */
+  }
+}
+/*
+html {
+  font-size: 16px; /* Establece el tamaño de fuente base 
+}
+
+body {
+  font-size: 1rem;  1rem será igual al tamaño de fuente base (16px) 
+}
+
+h1 {
+  font-size: 2rem;  2rem será igual a 32px (2 * 16px) 
+}
+
+p {
+  font-size: 0.875rem; /* 0.875rem será igual a 14px (0.875 * 16px) 
+}*/
