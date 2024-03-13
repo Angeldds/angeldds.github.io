@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia triunfadores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/galeria.css">
+    <!-- iconos bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" width="80px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="servicios.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="contactos.html">Contactos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="my-5 pt-5">
+        <h2 class="text-center">Nuestra Galeria</h2>
+        <section>
+            <img src="galeria/img00.jpg" class="img-galeria" alt="">
+            <img src="galeria/img01.jpg" class="img-galeria" alt="">
+            <img src="galeria/img02.jpg" class="img-galeria" alt="">
+            <img src="galeria/img03.jpg" class="img-galeria" alt="">
+            <img src="galeria/img04.jpg" class="img-galeria" alt="">
+            <img src="galeria/img05.jpg" class="img-galeria" alt="">
+            <img src="galeria/img06.jpg" class="img-galeria" alt="">
+            <img src="galeria/img07.jpg" class="img-galeria" alt="">
+            <!--  
+        <div class="modelo">
+            <img src="galeria/img00.jpg" class="img-modelo" alt="">
+            <div class="cerrar">X</div>
+        </div>-->
+
+        </section>
+
+    </main>
+
+    <div class="social bg-dark  py-5">
+        <div class="redes text-white text-center">
+            <i class="iconos-sociales m-2 bi bi-facebook"></i>
+            <i class="iconos-sociales m-2 bi bi-instagram"></i>
+            <i class="iconos-sociales m-2 bi bi-youtube"></i>
+            <i class="iconos-sociales m-2 bi bi-twitter"></i>
+
+        </div>
+    </div>
+
+
+
+    <footer class="bg-dark text-white py-3 text-center">
+        <div class="container">
+            <p>Todos los derechos reservados &copy; a Angel Davila Dahua</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- ------------ -->
+
+    <script>
+        /*Boton galeríasss*/
+        $(".img-galeria").click(function (a) {
+            let img = a.target.src;
+            let modelo = '<div class="modelo">' +
+                '<img src="' + img + '" class="img-modelo">' +
+                '<div class="cerrar">X</div>' +
+                '</div>';
+            $("body, html").append(modelo);
+            /*boton cerrar*/
+            $(".cerrar").click(function () {
+                $(".modelo").remove();
+            })
+
+             /*boton cerrar clic afuera*/
+             $(".modelo").click(function () {
+                $(".modelo").remove();
+            })
+
+            /*cerrar con espacio tambien*/
+            $(window).keyup(function(e){
+                if(e.which==27){
+                    $(".modelo").hide();
+                }
+            })
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
