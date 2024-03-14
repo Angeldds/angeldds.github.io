@@ -1,0 +1,8 @@
+.color-nav {
+    background-color: #eceaea08; /* Color de fondo predeterminado */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+  }
+
+.color-nav.scrolled {
+    background-color: #eeeeee; /* Nuevo color de fondo cuando se desplaza */
+  }

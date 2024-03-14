@@ -1,0 +1,62 @@
+.img-fondo{
+    height: 500px;
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.text-caja{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background: #498ec36d;
+}
+.clinica{
+    width: 100%;
+}
+
+/*sect_2*/
+.fondo{
+    background-image: url(../img/family-home-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    height: 300px;
+}
+.fondo-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.text-container{
+    background: rgba(0, 0, 0, 0.227);
+}
+/*Contactanos*/
+.lista-iconos{
+    list-style: none;
+    padding: 0;
+}
+.lista-iconos li {
+    margin-bottom: 10px;
+  }
+
+  .for-base{
+    border: solid 2px #4c4c4c2d;
+    border-radius: 10px;
+  }
+  /* footer */
+  footer{
+    background: #05121c;
+  }
+  .img-log-footer{
+    width: 100px;
+  }

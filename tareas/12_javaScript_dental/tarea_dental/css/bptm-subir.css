@@ -1,0 +1,9 @@
+.arriba#btnScrollToTop {
+    position: fixed;
+    bottom: -50px; /* Lo ocultamos inicialmente */
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: bottom 0.3s; /* Animación al mostrar y ocultar */
+    z-index: 1000;
+  }

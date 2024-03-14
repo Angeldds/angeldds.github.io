@@ -1,0 +1,26 @@
+/* Estilos para el preloader */
+.preloader {
+    position: fixed; /* Fija el preloader en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Color de fondo para el preloader */
+    z-index: 9999; /* Asegura que el preloader esté en la parte superior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Opacidad inicial */
+    transition: opacity 0.5s ease; /* Transición de opacidad */
+  }
+  
+  .preloader img {
+    width: 800px; /* Tamaño del GIF preloader */
+  }
+  
+  /* Clase para ocultar el preloader */
+  .preloader.hidden {
+    opacity: 0; /* Opacidad cero para ocultar */
+    pointer-events: none; /* Deshabilitar interacción */
+  }
+  
