@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Servicio Turistico</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- libreria carousel  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- mis estilos -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/promociones.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top py-3 ">
+            <div class="container-fluid ">
+                <a class="navbar-brand " href="#"><img src="img/logo1.png" class="logo" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header ">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><strong>X</strong>plore</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-md-3 pe-lg-5 ">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="promociones.html">Promociones</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Servicios
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="s-traslado.html">Traslados</a></li>
+                                    <li>
+                                        <hr class="p-0 m-0">
+                                    </li>
+                                    <li><a class="dropdown-item" href="s-guia_de_trabajo.html">Guia de
+                                            Trabajo</a>
+                                    </li>
+                                    <li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    City Tours
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="c-t-lima.html">City Tours Lima</a></li>
+                                    <li>
+                                        <hr class="p-0 m-0">
+                                    </li>
+                                    <li><a class="dropdown-item" href="c-t-l_paracas.html">Lima y Paracas</a></li>
+                                    <li>
+                                        <hr class="p-0 m-0">
+                                    </li>
+                                    <li><a class="dropdown-item" href="c-t-l-p-ica.html">Lima-Paracas-Ica</a></li>
+                                    <li>
+                                        <hr class="p-0 m-0">
+                                    </li>
+                                    <li><a class="dropdown-item" href="c-t-l-p-i-nazca.html">Lima-Paracas-Ica y
+                                            Nazca</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galería de Fotos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- relleno -->
+    <div class="relleno"></div>
+
+
+    <!-- Promociones tarjetas -->
+    <main>
+        <div class="container-fluid mt-4 pt-5">
+            <div class="container">
+                <div class="text-center mb-3 pb-3">
+                    <p class="custom-letter-spacing mb-1">PRECIOS</p>
+                    <h2 class="fw-bolder">Nuestras Promociones</h2>
+                </div>
+                <div class="row">
+                    <!-- todo lima -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="package-item mb-2 position-relative tarjeta-precios">
+                            <div class="img-tarjeta">
+                                <span class="rutas">Todo Lima</span>
+                                <img src="img/promociones_1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="p-4 pb-0 ">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-location-dot "></i>
+                                        Lima
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-clock "></i>
+                                        <strong>24</strong> Horas
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-person-half-dress "></i>
+                                        <strong>3</strong> Personas
+                                    </small>
+
+                                </div>
+                                <div class="caja-texto-bienvenido">
+                                    <p>Lima, la Ciudad de los Reyes alberga el centro histórico.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mb-3 jus align-items-center">
+                                    <a href="contacto.html" class="links">
+                                        <p class="links-sub"><i class="fa-solid fa-arrow-right"></i>Reserve Ya</p>
+                                    </a>
+                                    <a href="contacto.html" class="links">
+                                        <p class="text-precio">$35</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-center  boton-mas-info">
+                                <p class="informacion m-0 py-2 "><i class="fa-solid fa-circle-info"></i>Más información
+                                </p>
+                            </div>
+                            <div id="info-box" class="info-box position-absolute bottom-0 start-50 translate-middle-x">
+                                <p class="text-dscri">Lima, la Ciudad de los Reyes alberga el centro histórico de la
+                                    ciudad y una gran cantidad de construcciones pre inca, colonial y moderno.Nuestro
+                                    tour te permitirá recorrer todos esos lugares y revivir la historia.</p>
+                                <a href="contacto.html" class="links">
+                                    <div class="text-inf-precios">
+                                        <span class="precios">24 Horas</span>
+                                        <span class="text-precio">$35</span>
+                                    </div>
+                                </a>
+                                <hr>
+                                <button onclick="cerrarInfo()" class="boton-cerrar"><i
+                                        class="fa-solid fa-circle-xmark text-white fa-2x"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- lima paracas -->
+
+                    <!-- lima paracas ica -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="package-item mb-2 position-relative tarjeta-precios">
+                            <div class="img-tarjeta">
+                                <span class="rutas">Lima/Paracas</span>
+                                <img src="img/promociones_2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="p-4 pb-0 ">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-location-dot "></i>
+                                        Lima/Paracas
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-clock "></i>
+                                        <strong>24</strong> Horas
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-person-half-dress "></i>
+                                        <strong>2</strong> Personas
+                                    </small>
+
+                                </div>
+                                <div class="caja-texto-bienvenido">
+                                    <p>Paracas, donde el desierto se encuentra con el mar en un espectáculo natural
+                                        único.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mb-3 jus align-items-center">
+                                    <a href="contacto.html" class="links">
+                                        <p class="links-sub"><i class="fa-solid fa-arrow-right"></i>Reserva aqui</p>
+                                    </a>
+                                    <a href="contacto.html" class="links">
+                                        <p class="text-precio">$250</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-center  boton-mas-info">
+                                <p class="informacion m-0 py-2 "><i class="fa-solid fa-circle-info"></i>Más información
+                                </p>
+                            </div>
+                            <div id="info-box" class="info-box position-absolute bottom-0 start-50 translate-middle-x">
+                                <p class="text-dscri">Disfrute de una emocionante aventura llena de adrenalina en una
+                                    excursión de día completo desde Lima para visitar la ciudad de Paracas, donde podrán
+                                    visitar las islas ballestas de la reserva de paracas.</p>
+                                <a href="contacto.html" class="links">
+                                    <div class="text-inf-precios">
+                                        <span class="precios">24 Horas de adrenalina</span>
+                                        <span class="text-precio">$250</span>
+                                    </div>
+                                </a>
+                                <hr>
+                                <button onclick="cerrarInfo()" class="boton-cerrar"><i
+                                        class="fa-solid fa-circle-xmark text-white fa-2x"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- lima paracas ica nazca -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="package-item mb-2 position-relative tarjeta-precios">
+                            <div class="img-tarjeta">
+                                <span class="rutas">Lima/Paracas/Ica</span>
+                                <img src="img/promociones_3.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="p-4 pb-0 ">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-location-dot "></i>
+                                        Lima/Paracas/Ica
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-clock "></i>
+                                        <strong>2</strong> Días
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-person-half-dress "></i>
+                                        <strong>2</strong> Personas
+                                    </small>
+
+                                </div>
+                                <div class="caja-texto-bienvenido">
+                                    <p>Paracas, donde el desierto se encuentra con el mar en un espectáculo natural
+                                        único.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mb-3 jus align-items-center">
+                                    <a href="contacto.html" class="links">
+                                        <p class="links-sub"><i class="fa-solid fa-arrow-right"></i>Reserva aqui</p>
+                                    </a>
+                                    <a href="contacto.html" class="links">
+                                        <p class="text-precio">$380</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-center  boton-mas-info">
+                                <p class="informacion m-0 py-2 "><i class="fa-solid fa-circle-info"></i>Más información
+                                </p>
+                            </div>
+                            <div id="info-box" class="info-box position-absolute bottom-0 start-50 translate-middle-x">
+                                <p class="text-dscri">Embárcate en un emocionante viaje desde la dinámica Lima hasta los
+                                    impresionantes paisajes de Paracas y la encantadora Ica. Desde la costa deslumbrante
+                                    de Paracas y sus Islas Ballestas, hasta las dunas de arena de Ica y la exquisita
+                                    experiencia enológica en las bodegas locales, este recorrido te sumergirá en la
+                                    diversidad natural y cultural del sur de Perú, ofreciéndote una experiencia
+                                    inolvidable llena de aventuras y descubrimientos.</p>
+                                <a href="contacto.html" class="links">
+                                    <div class="text-inf-precios">
+                                        <span class="precios">2 Días de recuerdos inolvidables</span>
+                                        <span class="text-precio">$380</span>
+                                    </div>
+                                </a>
+                                <hr>
+                                <button onclick="cerrarInfo()" class="boton-cerrar"><i
+                                        class="fa-solid fa-circle-xmark text-white fa-2x"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="package-item mb-2 position-relative tarjeta-precios">
+                            <div class="img-tarjeta">
+                                <span class="rutas">Lima/Paracas/Ica</span>
+                                <img src="img/promociones_4.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="p-4 pb-0 ">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-location-dot "></i>
+                                        Lima/Paracas/Ica
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-clock "></i>
+                                        <strong>2</strong> Días
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-person-half-dress "></i>
+                                        <strong>3</strong> Personas
+                                    </small>
+
+                                </div>
+                                <div class="caja-texto-bienvenido">
+                                    <p>Paracas, donde el desierto se encuentra con el mar en un espectáculo natural
+                                        único.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mb-3 jus align-items-center">
+                                    <a href="contacto.html" class="links">
+                                        <p class="links-sub"><i class="fa-solid fa-arrow-right"></i>Reserva aqui</p>
+                                    </a>
+                                    <a href="contacto.html" class="links">
+                                        <p class="text-precio">$450</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-center  boton-mas-info">
+                                <p class="informacion m-0 py-2 "><i class="fa-solid fa-circle-info"></i>Más información
+                                </p>
+                            </div>
+                            <div id="info-box" class="info-box position-absolute bottom-0 start-50 translate-middle-x">
+                                <p class="text-dscri">Disfrute de una emocionante aventura llena de adrenalina y cultura
+                                    en una excursión de día completo desde Lima para visitar la ciudad de Paracas,
+                                    continuaremos el viaje a la HUACACHINA un oasis en el desierto costero, de ICA
+                                    rodeado de miles de kilómetros de arena donde podrán hacer Sand Boarding,
+                                    Finalizando la visita en los viñedos para degustar el famoso pisco y vinos que se
+                                    elaboran en la región.</p>
+                                <a href="contacto.html" class="links">
+                                    <div class="text-inf-precios">
+                                        <span class="precios">3 días de pura diversión</span>
+                                        <span class="text-precio">$450</span>
+                                    </div>
+                                </a>
+                                <hr>
+                                <button onclick="cerrarInfo()" class="boton-cerrar"><i
+                                        class="fa-solid fa-circle-xmark text-white fa-2x"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="package-item mb-2 position-relative tarjeta-precios">
+                            <div class="img-tarjeta">
+                                <span class="rutas">Lima/Paracas/Ica/Nazca</span>
+                                <img src="img/promociones_6.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="p-4 pb-0 ">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-location-dot "></i>
+                                        Lima/Paracas/Ica/Nazca
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-clock "></i>
+                                        <strong>3</strong> Días
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-person-half-dress "></i>
+                                        <strong>2</strong> Personas
+                                    </small>
+
+                                </div>
+                                <div class="caja-texto-bienvenido">
+                                    <p style="font-size: 14px;">Iquitos, la puerta de entrada a la selva amazónica,
+                                        donde la aventura y la
+                                        naturaleza se entrelazan en una experiencia inolvidable</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mb-3 jus align-items-center">
+                                    <a href="contacto.html" class="links">
+                                        <p class="links-sub"><i class="fa-solid fa-arrow-right"></i>Reserva aqui</p>
+                                    </a>
+                                    <a href="contacto.html" class="links">
+                                        <p class="text-precio">$600</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-center  boton-mas-info">
+                                <p class="informacion m-0 py-2 "><i class="fa-solid fa-circle-info"></i>Más información
+                                </p>
+                            </div>
+                            <div id="info-box" class="info-box position-absolute bottom-0 start-50 translate-middle-x">
+                                <p class="text-dscri">Disfrute de una emocionante aventura llena de adrenalina en una
+                                    excursión de día completo desde Lima para visitar la ciudad de Paracas, el desierto
+                                    costero, el oasis más espectacular de américa, el desierto de Huacachina, viñedos y
+                                    las famosas figuras enigmáticas (líneas de nazca.)</p>
+                                <a href="contacto.html" class="links">
+                                    <div class="text-inf-precios">
+                                        <span class="precios">3 días de pura diversión</span>
+                                        <span class="text-precio">$600</span>
+                                    </div>
+                                </a>
+                                <hr>
+                                <button onclick="cerrarInfo()" class="boton-cerrar"><i
+                                        class="fa-solid fa-circle-xmark text-white fa-2x"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="package-item mb-2 position-relative tarjeta-precios">
+                            <div class="img-tarjeta">
+                                <span class="rutas">Todo Cusco</span>
+                                <img src="img/promociones_5.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="p-4 pb-0">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-location-dot "></i>
+                                        Cusco
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-clock "></i>
+                                        <strong>24</strong> Horas
+                                    </small>
+
+                                    <small class="m-0">
+                                        <i class="fa-solid fa-person-half-dress "></i>
+                                        <strong>2</strong> Personas
+                                    </small>
+
+                                </div>
+                                <div class="caja-texto-bienvenido">
+                                    <p>Cusco, donde la historia cobra vida entre montañas majestuosas y cultura
+                                        vibrante.
+                                    </p>
+                                </div>
+
+
+                            </div>
+                            <hr>
+                            <div class="p-2">
+                                <div class="d-flex justify-content-between mb-3 jus align-items-center">
+                                    <a href="contacto.html" class="links">
+                                        <p class="links-sub"><i class="fa-solid fa-arrow-right"></i>Reserva aqui</p>
+                                    </a>
+                                    <a href="contacto.html" class="links">
+                                        <p class="text-precio">$180</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text-center boton-mas-info">
+                                <p class="informacion m-0 py-2"><i class="fa-solid fa-circle-info"></i>Más información
+                                </p>
+                            </div>
+                            <div id="info-box" class="info-box position-absolute bottom-0 start-50 translate-middle-x">
+                                <p class="text-dscri">Aquí, en el corazón de los Andes, les espera una experiencia única
+                                    llena de magia y aventura. Desde las impresionantes ruinas incas de Machu Picchu
+                                    hasta las pintorescas calles empedradas de nuestra ciudad colonial, cada rincón de
+                                    Cusco está impregnado de una rica herencia cultural que nos enorgullece compartir
+                                    con ustedes</p>
+                                <a href="contacto.html" class="links">
+                                    <div class="text-inf-precios">
+                                        <span class="precios">15 horas para capturar lugares impresionantes</span>
+                                        <span class="text-precio">$50</span>
+                                    </div>
+                                </a>
+                                <hr>
+                                <button onclick="cerrarInfo()" class="boton-cerrar"><i
+                                        class="fa-solid fa-circle-xmark text-white fa-2x"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="container container-md container-fluid py-5 my-5">
+            <article class="text-center">
+                <p class="custom-letter-spacing mb-1">DESTINO</p>
+                <h2 class="fw-bolder">Explora el destino principal</h2>
+            </article>
+            <figure class="mt-4">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 tarjeta-explore p-3">
+                        <a href="galeria.html" class="d-block">
+                            <div class="card shadow overflow-hidden">
+                                <div class="card-body position-relative tarjeta-explore-sub">
+                                    <div class="text-explore">
+                                        <div class="text">
+                                            <h3 class=" ">LIMA</h3>
+                                            <p class="m-0">10 Lugares</p>
+                                        </div>
+                                    </div>
+                                    <img src="img/principal_1.jpg" class="d-block w-100" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 tarjeta-explore p-3">
+                        <a href="galeria.html" class="d-block">
+                            <div class="card shadow overflow-hidden">
+                                <div class="card-body position-relative tarjeta-explore-sub">
+                                    <div class="text-explore">
+                                        <div class="text">
+                                            <h3 class=" ">PARACAS</h3>
+                                            <p class="m-0">3 Lugares</p>
+                                        </div>
+                                    </div>
+                                    <img src="img/principal_2.jpg" class="d-block w-100" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 tarjeta-explore p-3">
+                        <a href="galeria.html" class="d-block">
+                            <div class="card shadow overflow-hidden">
+                                <div class="card-body position-relative tarjeta-explore-sub">
+                                    <div class="text-explore">
+                                        <div class="text">
+                                            <h3 class=" ">ICA</h3>
+                                            <p class="m-0">8 Lugares</p>
+                                        </div>
+                                    </div>
+                                    <img src="img/principal_3.jpg" class="d-block w-100" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 tarjeta-explore p-3">
+                        <a href="galeria.html" class="d-block">
+                            <div class="card shadow overflow-hidden">
+                                <div class="card-body position-relative tarjeta-explore-sub">
+                                    <div class="text-explore">
+                                        <div class="text">
+                                            <h3 class=" ">NAZCA</h3>
+                                            <p class="m-0">4 Lugares</p>
+                                        </div>
+                                    </div>
+                                    <img src="img/principal_4.jpg" class="d-block w-100" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 tarjeta-explore p-3">
+                        <a href="galeria.html" class="d-block">
+                            <div class="card shadow overflow-hidden">
+                                <div class="card-body position-relative tarjeta-explore-sub">
+                                    <div class="text-explore">
+                                        <div class="text">
+                                            <h3 class=" ">CUSCO</h3>
+                                            <p class="m-0">5 Lugares</p>
+                                        </div>
+                                    </div>
+                                    <img src="img/principal_5.jpg" class="d-block w-100" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 tarjeta-explore p-3">
+                        <a href="galeria.html" class="d-block">
+                            <div class="card shadow overflow-hidden">
+                                <div class="card-body position-relative tarjeta-explore-sub">
+                                    <div class="text-explore">
+                                        <div class="text">
+                                            <h3 class=" ">PUNO</h3>
+                                            <p class="m-0">6 Lugares</p>
+                                        </div>
+                                    </div>
+                                    <img src="img/principal_6.jpg" class="d-block w-100" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </figure>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="text-footer pt-4">
+        <div class="container border-bottom-1 ">
+            <div class="row ">
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex flex-column ">
+                        <p class="text-white-50 mb-2">Dirección: Villa Maria.</p>
+                        <p class="text-white-50 mb-2">Dirección: Barranco</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex flex-column ">
+                        <p class="text-white-50 mb-2">Cell: 922405181</p>
+                        <p class="text-white-50 mb-2">Telf: (01)362-1250</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex flex-column ">
+                        <p class="text-white-50 mb-2">e-mail:vscod26@gmail.com</p>
+                        <p class="text-white-50 mb-2">e-mail:ang3ldd2000@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="d-flex flex-column text-footer-sub text-md-start text-lg-center">
+                        <i class="fa-solid fa-book-open text-white-50 libro"></i>
+                        <p class="text-white-50 mb-2">Libro de Reclamaciones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy py-4 ">
+            <p class="text-white-50 text-center my-0">Todos los derechos Reservados a <strong
+                    class="custom-letter-spacing">ANGEL DAVILA DAHUA</strong>Copyright &copy;
+            </p>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="js/modificar-svg.js"></script>
+
+    <!-- jquery owlcarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-qFOQ9YFAeGj1gDOuUD61g3D+tLDv3u1ECYWqT82WQoaWrOhAY+5mRMTTVsQdWutbA5FORCnkEPEgU0OF8IzGvA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- java scrip carousel ow libreria -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FON AWESONE -->
+    <script src="https://kit.fontawesome.com/c4d649eaa3.js" crossorigin="anonymous"></script>
+    <!-- MI SCRIPTS -->
+    <script src="js/promociones.js"></script>
+</body>
+
+</html>

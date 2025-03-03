@@ -1,0 +1,243 @@
+ /*.owl-carousel{
+    background-color: #15d815;
+    
+} */
+ .contenido-clients {
+   position: relative;
+   margin-top: 50px;
+ }
+
+ .img-perfil {
+   position: absolute;
+   left: 50%;
+   top: -50px;
+   transform: translateX(-50%);
+ }
+
+ .testimonio-card {
+   background-color: #ececec;
+   border-radius: 5px;
+   height: 350px;
+ }
+
+ .testimonial-carousel .owl-dots {
+   margin-top: 5px;
+   text-align: center;
+   margin-bottom: 10px;
+ }
+
+ .testimonial-carousel .owl-dot {
+   position: relative;
+   display: inline-block;
+   margin: 0 5px;
+   width: 20px;
+   height: 20px;
+   background: #696969 !important;
+   transition: 1s;
+ }
+
+ .testimonial-carousel .owl-dot.active {
+   width: 40px;
+   background: #7AB730 !important;
+ }
+
+ .testimonial-carousel .owl-item.center .testimonial-text {
+   box-shadow: 0 0 30px #CCCCCC;
+ }
+
+ .owl-stage-outer {
+   padding-bottom: 30px;
+ }
+
+ /* Acordeon  */
+ .botn-acordeon {
+   position: relative;
+ }
+
+ .texto-titulo-acordeon {
+   text-align: center;
+   width: 200PX;
+   color: white;
+   font-weight: bold;
+   position: absolute;
+   background-color: #69A660;
+   padding: 10px;
+   top: 12%;
+   left: 50%;
+
+   transform: translateX(-50%);
+   box-shadow: 0px 0px 5px #020202a4;
+ }
+
+ .accordion-button {
+   background-color: #b2b1b1;
+
+ }
+
+ .accordion-button:hover {
+   background-color: #599e4e;
+ }
+
+ .accordion-button:focus {
+   /* box-shadow: 0px 0px 5px #69A660; */
+   box-shadow: none;
+   outline: none;
+   background-color: #69A660;
+ }
+
+ .accordion-button:not(.collapsed) {
+   background-color: #69a660d8;
+ }
+
+ #accordionExample .accordion-button::after {
+
+   color: #ffffff;
+ }
+
+ #accordionExample .accordion-button::after {
+   filter: invert(100%);
+   /* filter: invert(90%) sepia(100%) saturate(1000%) hue-rotate(100deg) brightness(100%) contrast(100%); */
+ }
+
+ .table {
+   background-color: #599e4e;
+ }
+
+ /*//////////////////////////////////////////////////////////////////////////////*/
+ /* Traslados */
+ .contenido-card-mov {
+   
+ }
+.img-mov{
+  position: relative;
+}
+.text-prvd-mov{
+  position: absolute;
+  background: #24732937;
+  backdrop-filter:blur(10px) ;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+
+  padding: 10px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ .img-card-mov {
+   width: 100%;
+   
+ }
+ .text-card-mov{
+  padding: 10px 15px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #161d17;
+  
+ }
+ .titulo-card-mov{
+  font-weight: 900;
+  font-size: 20px;
+  color: #eeeeee;
+  background-color: #599e4e;
+  padding: 5px;
+  border-radius: 0px 10px 0px 10px;
+  text-align: center;
+ }
+ .text-dscp-mov{
+  font-size: 18px;
+  color: #a3a3a3;
+ }
+ .link-mov{
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  background-color: #f0f0f0;
+  color: #161d17;
+  font-size: 1.2rem;
+ }
+ @media screen and (max-width:992px) {
+  .contenido-card-mov{
+    display: flex;
+    position: relative;
+    background-color: #f6f6f6;
+    padding-top: 12px;
+  }
+  .img-card-mov {
+    max-width:400px;
+    width: 100%;
+    
+  }
+  .text-card-mov{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 60%;
+    box-shadow: 0px 0px 10px #00000098;
+    margin-right: 12px;
+   }
+ }
+
+ @media screen and (max-width:768px) {
+  .contenido-card-mov{
+    display: unset;
+    position:relative;
+    background-color: unset;
+    padding-top: 12px;
+    padding-top: 12px;
+    
+
+  }
+  .img-card-mov {
+    max-width:unset;
+    width: 100%;
+    
+  }
+  .text-card-mov{
+    position: absolute;
+    bottom: 0;
+    right: unset;
+    transform: unset;
+    width: unset;
+    box-shadow:12px;
+    margin-right: 12px;
+    background-color: #161d1796;
+   }
+   .text-dscp-mov{
+    color: #fcfcfc;
+   }
+
+ }
+
+ @media screen and (max-width:576px) {
+  .contenido-card-mov{
+    display: unset;
+    position:unset;
+    background-color: unset;
+    padding-top: 12px;
+    padding-top: 12px;
+    
+
+  }
+  .img-card-mov {
+    max-width:unset;
+    width: 100%;
+    
+  }
+  .text-card-mov{
+    position: unset;
+    bottom: unset;
+    right: unset;
+    transform: unset;
+    width: unset;
+    box-shadow:unset;
+    margin-right: unset;
+    background-color: #161d17;
+   }
+   .text-dscp-mov{
+    color: #fcfcfc;
+   }
+
+ }

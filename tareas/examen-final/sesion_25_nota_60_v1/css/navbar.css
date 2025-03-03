@@ -1,0 +1,76 @@
+.container-fluid .navbar-brand {
+    padding: 0px 0px 0px 48px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+
+}
+
+.nav-item {
+    font-size: medium;
+    font-weight: bold;
+
+}
+/* texto de los links */
+.nav-link {
+    color: #e1e1e1;
+}
+
+.navbar-expand-lg {
+    background-color: #69A660;
+}
+.navbar-nav .nav-link.active{
+    color: #181818;
+}
+.nav-link:hover, .nav-link.active{
+    color: #e5d711;
+}
+
+/*.navbar-nav .nav-link:focus {cambaiar el color de los enlaces*/
+  /*color: #494949; 
+  .navbar-nav .nav-link:hover 
+}*/
+/*drowpdownc*/
+.nav-item .dropdown-menu {
+    background-color: #99db8f;
+    padding: 0px 0px;
+    overflow: hidden !important;
+
+}
+.dropdown-menu .active{
+    background-color: #cabd07;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #012611;
+    transition: .4s ease-out;
+    color: #fff;
+}
+
+/* boton amburguer editado */
+.navbar-toggler {
+    border: none;
+
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* BOTON CERRER */
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* fondo de munnu cell */
+.offcanvas{
+    background-color: #69A660;
+
+    /* background-image: url(/sesion_25_nota_60_v1/img/banner_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}

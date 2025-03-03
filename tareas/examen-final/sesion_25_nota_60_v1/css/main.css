@@ -1,0 +1,202 @@
+/* .container{
+    position: relative;
+} */
+.contenido-info {
+    background-color: #031404;
+    max-width: 900px;
+
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-letter-spacing {
+    letter-spacing: 0.2rem;
+    color: #247329;
+}
+
+.color-parrafo {
+    color: #c7c7c7;
+}
+/* relleno de top */
+.relleno{
+    width: 100%;
+    height: 78px;
+    background-color: #000c08;
+}
+/* CAROUSEL NOSOTROS */
+
+
+
+/* explora el destino principal */
+.text-explore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.text-explore .text {
+    width: 250px;
+    background-color: #000c0884;
+    padding: 12PX;
+    color: aliceblue;
+    text-align: center;
+    transition: .3s ease-in;
+    border-radius: 5px;
+
+}
+
+.tarjeta-explore-sub {
+    transition: .4s ease-out;
+}
+
+.tarjeta-explore-sub:hover {
+    transform: scale(1.2);
+    transition: .3s ease-in;
+}
+
+.tarjeta-explore:hover .text {
+    transform: scale(1.2);
+    transition: .5s ease-in;
+}
+
+/* tours servicios */
+.figura-serv {
+    background-color: #f4f4f4;
+    height: 200px;
+    transition: .5s ease;
+
+}
+
+.figura-ico {
+    color: #69A660;
+    margin-bottom: 10px;
+
+}
+
+.figura-ico .fa-solid,
+.figura-ico .fa-brands {
+    border: 2px solid #69A660;
+    padding: 20px;
+    transition: 1s ease;
+}
+
+.figura-serv:hover .fa-solid,
+.figura-serv:hover .fa-brands {
+    color: #f4f4f4;
+    background-color: #69A660;
+    transition: 1s ease;
+}
+
+.figura-serv:hover {
+    box-shadow: 0px 0px 28px -1px rgba(0, 0, 0, 0.294);
+    transition: .5s ease;
+}
+
+/* QUIENES SOMOS */
+.img-somos {
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.text-somos {
+    background-color: #031404;
+
+}
+
+/* footer */
+.text-footer {
+    background-color: #212121;
+    
+}
+
+.footer-copy{
+   
+    border-top: 2px solid #404040;
+}
+
+.footer-copy .text-center{
+    position: unset;
+}
+.boton-subir {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 11;
+  }
+/* medi querys personalizados 1200px */
+@media screen and (max-width:1200px) {
+    .contenido-info {
+
+        max-width: 600px;
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .color-parrafo {
+        color: #c7c7c7;
+        font-size: 12px;
+    }
+
+    .fw-bolder {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+
+    .contenido-info {
+        background-color: #000c08;
+        max-width: unset;
+        height: auto;
+        position: unset;
+        right: unset;
+        top: unset;
+        transform: unset;
+        padding: 0;
+    }
+
+    .content-img-turist {
+        height: 400px !important;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .tusrist {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+
+    /* ssomo */
+    .img-somos {
+        max-height: 300px;
+        overflow: hidden;
+    }
+
+    .img-somos-sub {
+        transform: translateY(-50%);
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .content-img-turist {
+        height: 400px !important;
+        position: relative;
+        overflow: hidden;
+    }
+}

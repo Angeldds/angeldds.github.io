@@ -1,0 +1,374 @@
+main .rutas-l-p-i::after {
+    content: "";
+    background-image: radial-gradient(#40834a11 1px, transparent 2px); /* Color de los puntos */
+    background-size: 10px 10px; /* Tamaño de los puntos */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Evita que los puntos afecten a los elementos interactivos */
+    z-index: -2; /* Colocar los puntos detrás del contenido */
+  }
+.c-t-titulo {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.c-t-sb_titulo {
+    font-size: 1.7rem;
+}
+
+.c-t-l-img {
+    width: 100%;
+}
+
+.linea-c-t-l {
+    display: none;
+}
+
+@media screen and (max-width:992px) {
+    .c-t-titulo {
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .c-t-sb_titulo {
+        font-size: 1.3rem;
+    }
+
+    .c-t-l-img {
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .c-t-l-sb-img {
+        transform: translateY(-30%);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .c-t-titulo {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .c-t-sb_titulo {
+
+        font-size: 1.3rem;
+    }
+
+    .c-t-l-img {
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .c-t-l-sb-img {
+        transform: translateY(-30%);
+    }
+
+    .linea-c-t-l {
+        display: block;
+    }
+}
+
+/*//////////////////////Lima y Paracas//////////////////////////*/
+
+
+p.efecto-opacity {
+
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.efecto-opacity.visible {
+    opacity: 1;
+}
+
+/*///////////// linea /////////////*/
+.linea_map {
+    opacity: 0.8;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    transform: translateY(-50%);
+    translate: -50%;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.527));
+}
+
+/*caja de viajes*/
+
+.caja-text-vjes {
+    background-color: rgba(0, 0, 0, 0.697);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    padding: 20px;
+    width: 500px;
+    z-index: 14;
+}
+
+.text-ini-vjes-titulo {
+    color: #83e78a;
+    text-align: center;
+    z-index: 10;
+}
+
+.text-ini-vjes-s-titulo {
+    color: #fff;
+
+}
+
+.linea_map_992px {
+    display: none;
+    rotate: 8deg;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.527));
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    transform: translateY(-50%);
+    translate: -50%;
+    width: 100px;
+}
+
+@media screen and (max-width:1400px) {
+    .caja-text-vjes {
+        background-color: rgba(0, 0, 0, 0.697);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        padding: 20px;
+        width: 500px;
+        z-index: 14;
+    }
+
+    .caja-text-vjes {
+        background-color: rgba(0, 0, 0, 0.697);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -40%;
+        padding: 20px;
+        width: 400px;
+    }
+
+    .linea_map {
+        opacity: 0.8;
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 600px;
+        transform: translateY(-50%);
+        translate: -50%;
+        filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.527));
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .caja-text-vjes {
+        background-color: rgba(0, 0, 0, 0.697);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+        z-index: 13;
+    }
+
+    .linea_map {
+        rotate: 5deg;
+        opacity: 0.8;
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        transform: translateY(-50%);
+        translate: -50%;
+        filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.527));
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .linea_map_992px {
+        display: block;
+        rotate: 2deg;
+        filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.527));
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        transform: translateY(-50%);
+        translate: -60%;
+        width: 400px;
+        opacity: .7;
+    }
+
+    .linea_map {
+        display: none;
+
+    }
+
+    .caja-text-vjes {
+        background-color: rgba(0, 0, 0, 0.697);
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+        z-index: 11;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .linea_map_992px {
+        display: block;
+        rotate: 2deg;
+        filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.527));
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        transform: translateY(-50%);
+        translate: -60%;
+        width: 300px;
+        opacity: .7;
+    }
+
+    .linea_map {
+        display: none;
+
+    }
+
+    .caja-text-vjes {
+        background-color: rgba(0, 0, 0, 0.697);
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+        z-index: 11;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .linea_map_992px {
+        display: block;
+        rotate: 2deg;
+        filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.527));
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        transform: translateY(-50%);
+        translate: -60%;
+        width: 210px;
+        opacity: .7;
+    }
+
+    .linea_map {
+        display: none;
+
+    }
+
+    .caja-text-vjes {
+        background-color: rgba(0, 0, 0, 0.697);
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        padding: 10px;
+        max-width: 270px;
+        width: 100%;
+        z-index: 11;
+    }
+
+    .text-ini-vjes-s-titulo {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:340px) {
+    .linea_map_992px {
+        display: block;
+        rotate: 2deg;
+        filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.527));
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        transform: translateY(-50%);
+        translate: -60%;
+        width: 180px;
+        opacity: .7;
+    }
+
+    .linea_map {
+        display: none;
+
+    }
+
+    .caja-text-vjes {
+        background-color: rgba(0, 0, 0, 0.697);
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        padding: 20px;
+        max-width: 250px;
+        width: 100%;
+        z-index: 11;
+    }
+
+    .text-ini-vjes-s-titulo {
+        font-size: 10px;
+    }
+}
+
+/*////////////////////// LIMA-PARACAS-ICA ////////////////////////////*/
+@media screen and (max-width:768px) {
+
+
+    .ica-sub-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .caja-text_1{
+        font-size: 10px;
+     
+        background-color: #ffffff7c;
+        padding: 10px;
+        font-weight: 700;
+    }
+    .caja-text_2{
+        
+        font-size: 10px;
+     
+        background-color: #ffffff7c;
+        padding: 10px;
+        font-weight: 700;
+    }
+}

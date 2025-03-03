@@ -1,0 +1,83 @@
+.grid-wp{
+    cursor: pointer;
+}
+.galeria-elemento{
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.galeria-elemento img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    
+}
+.grid-wp > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wp > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.grid-wp{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow:dense;
+}
+.grid-wp .wide{
+    grid-column: span 2;
+}
+.grid-wp .tall{
+    grid-row: span 2;
+}
+.grid-wp .big{
+    grid-column: span 2;
+    grid-row:span 2;
+}
+
+.mnia-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.759);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    opacity: 0;
+    transition: .5s ease;
+}
+.mnia-overlay-text>h2{
+    color: #1fa628;
+    letter-spacing: 2px;
+}
+.mnia-overlay-text{
+    position: absolute;
+    /* bottom: -50%;
+    left: 50%;
+    transform: translate(-50%,-100%); */
+    /* centrado */
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+
+    z-index: 100;
+    opacity: 0;
+    transition: .6s ease-out;
+}
+.galeria-elemento:hover .mnia-overlay,.galeria-elemento:hover .mnia-overlay-text{
+    opacity: 1;
+    transition: .5s ease;
+}
+.galeria-elemento:hover .mnia-overlay-text{
+    transition: .4s ease;
+}

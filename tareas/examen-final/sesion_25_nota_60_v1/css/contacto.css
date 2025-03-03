@@ -1,0 +1,50 @@
+::-webkit-input-placeholder {
+    color: #9fa8a4 !important; 
+    font-size: 13px !important; 
+ }
+ 
+ :-moz-placeholder { 
+   color: #9fa8a4 !important;
+   font-size: 13px !important;
+ }
+ 
+ ::-moz-placeholder { 
+   color: #9fa8a4 !important; 
+   font-size: 13px !important;
+ }
+
+ /* //////////bton contacto /////////////*/
+
+ .bton-enviar:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Anular los estilos de activación */
+.bton-enviar:active {
+  background-color: #9abe4a !important;
+  color: #FFFFFF; 
+}
+
+/* Estilos personalizados para el botón */
+.bton-enviar {
+  background-color: #5ea852 !important;
+  color: #FFFFFF; 
+  border-radius: 8px; 
+  border: none; 
+  padding: 10px 20px;
+}
+
+.bton-enviar:hover {
+  background-color: #69A660; 
+  color: #FFFFFF;
+}
+/*////////////// configuracion a los inputs//////////////// */
+.entradas:active{
+  color: #5ea852;
+  transition: .5s ease;
+}
+.entradas:focus{
+  box-shadow: 1px 1px 10px #5ea852;
+  border: solid 1px #5ea852 ;
+}

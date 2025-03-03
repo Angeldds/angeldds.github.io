@@ -1,0 +1,103 @@
+.tarjeta-precios {
+    background-color: #f5f5f5;
+    max-height: 650px;
+    height: 100%;
+}
+
+
+.informacion {
+    /* text-decoration: none; */
+    color: #012611;
+    background-color: #d8d8d8;
+    cursor: pointer;
+}
+.img-tarjeta{
+    position: relative;
+}
+.rutas{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background-color: #69A660;
+    padding: 5px 8px;
+} 
+small .fa-solid,
+.informacion .fa-solid,
+.links-sub .fa-solid {
+    margin-right: 10px !important;
+    color: #69A660;
+}
+
+.boton-mas-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.p-4 .caja-texto-bienvenido {
+    overflow: hidden;
+    height: 80px;   
+}
+
+/* caja de mas info */
+.text-dscri {
+    color: #012611;
+}
+
+#info-box {
+    display: none;
+    padding: 15px;
+    width: 100%;
+    background-color: #69a6609a;
+    /* background: linear-gradient(180deg, rgba(105, 166, 96, 0.95) 0%, rgba(0,13,9,0.95) 100%); */
+    backdrop-filter: blur(10px);
+}
+
+.boton-cerrar {
+    margin: 0 auto;
+    display: block;
+    background-color: #69A660;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 2px;
+    transition: .5s ease;
+}
+
+.boton-cerrar:hover {
+    background-color: #80b578;
+    transition: .5s ease;
+    transform: scale(1.2);
+}
+
+.links {
+    text-decoration: none;
+    color: #012611;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.links:hover {
+    color: #80b578;
+}
+
+.precios {
+    color: #012611;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+.text-precio {
+    color: #012611;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.text-inf-precios {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+}

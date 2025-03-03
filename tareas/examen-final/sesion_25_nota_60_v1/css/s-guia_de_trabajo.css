@@ -1,0 +1,50 @@
+.s-t-card {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    margin: 30px 0px;
+    padding: 20px;
+    position: relative;
+}
+
+.s-t-compra-ya {
+    background-color: #e9af0ec1;
+    color: #247329;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    backdrop-filter: blur(10px);
+    border-radius: 0px 0px 10px 10px;
+    transition: .5s;
+    font-weight: 700;
+}
+
+.s-t-sub-title {
+    transition: .5s;
+}
+
+.s-t-compra-ya:hover .s-t-sub-title {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.t-ico-card {
+    font-size: 100px;
+    color: #69A660;
+}
+
+.t-sub-titulo-card {
+    text-align: start;
+}
+
+@media screen and (max-width:576px) {
+
+    .s-t-compra-ya {
+        bottom: -10%;
+    }
+
+} 
